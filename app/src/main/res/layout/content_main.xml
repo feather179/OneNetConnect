@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/EditText_DataToPost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="number"
+                android:hint="请输入要上传的数据"/>
+
+            <Button
+                android:id="@+id/Button_PostData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="上传信息" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbarStyle="outsideOverlay">
+
+            <TextView
+                android:id="@+id/Text_InfoReceived"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="收到的数据"
+                />
+
+        </ScrollView>
+
+
+
+        <Button
+            android:id="@+id/Button_GetInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取信息" />
+
+
+
+
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
